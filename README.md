@@ -758,7 +758,7 @@ user_log=$(users | tr ' ' '\n' | sort -u | wc -w)
 ```bash
 network=$(hostname -I | tr '\n' ' ' && ip link | grep /ether | awk '{print $2}')
 ```
-- `hostname -I`: Shows IP addresses.
+- `hostname -I`: Shows IP addressesm, (use `hostname -i` instead in Linux).
 - `tr '\n' ' '`: Replaces new lines with spaces.
 - `ip link | grep /ether | awk '{print $2}'`: Extracts MAC address.
 
