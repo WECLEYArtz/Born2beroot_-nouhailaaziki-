@@ -1103,28 +1103,7 @@ sudo apt install mariadb-server
 ![continue](screen_shots_guide/Screen%20Shot%202025-01-02%20at%208.46.13%20PM.png)
 This command will install the MariaDB server and related dependencies. Make sure to use sudo to grant administrative privileges required for the installation process.
 
-After installation, MariaDB will be ready to accept and manage databases, but it's also important to configure it and ensure the server is secured and optimized for your specific needs.
-
-2. Securing MariaDB
-
-By default, a fresh MariaDB installation may be left insecure, allowing for potential unauthorized access. To address this, the mariadb-server package includes a security script designed to improve the server's security by removing unused accounts, restricting access, and setting up best practices. Running this script will help you secure your MariaDB installation.
-
-To initiate the security process, execute the following command:
-
-```bash
-sudo mysql_secure_installation
-```
-![continue](screen_shots_guide/Screen%20Shot%202025-01-38%20at%208.48.11%20PM.png)
-
-Once executed, the script will guide you through a series of steps:
-
-- Set a root password (if you haven't done so already).
-- Remove insecure default settings, like anonymous users.
-- Disable remote root login, ensuring that root access is only allowed from localhost.
-- Remove the test database, which could otherwise be a potential target for attackers.
-- Reload privilege tables, which updates the server with the latest security settings.
-During the process, you may be prompted to switch to Unix socket authentication. Since you already have a protected root account, simply select 'N' (No) to decline the switch.
-![continue](screen_shots_guide/Screen%20Shot%202025-01-02%20at%208.49.47%20PM.png)
+After installation, MariaDB will be ready to accept and manage databases
 
 3. Access MariaDB
 
